@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Progress</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress">
+    <h2 class="progress_head">Progress</h2>
+    <div class="progress__wrapper">
+
+      <div class="circular-progress__container">
+        <svg class="circular-progress__block" >
+          <circle
+              class="circular-progress__ring--background"
+              stroke="#eeedee"
+              stroke-width="10"
+              fill="transparent"
+              cx="90"
+              cy="90"
+              r="60"/>
+          <circle
+              class="circular-progress__ring"
+              stroke="#005cfe"
+              stroke-width="10"
+              fill="transparent"
+              cx="90"
+              cy="90"
+              r="60"/>
+        </svg>
+      </div>
+
+      <div class="controls__container">
+
+        <div class="control__container">
+          <label for="control__percent" class="control__value">
+            <input id="control__percent" class="control__percent-progress" value="75" type="number">
+            <span>Value</span>
+          </label>
+        </div>
+
+        <div class="control__container">
+          <label for="control__animation" class="control__switch">
+            <input id="control__animation" class="control__checkbox" type="checkbox">
+            <span>Animate</span>
+          </label>
+        </div>
+
+        <div class="control__container">
+          <label for="control__hiding" class="control__switch">
+            <input id="control__hiding" class="control__checkbox" type="checkbox">
+            <span>Hide</span>
+          </label>
+        </div>
+        <div class="warning hidden">Введите число от 0 до 100</div>
+      </div>
+    </div>
+
+  </div>
+    <script src="main.js"></script>
+</body>
+</html>
